@@ -3,7 +3,7 @@ import hashlib
 import sys
 
 ##
-#    #> md5check.py arg1 arg2
+#    #> python[.exe] md5check.py arg1 arg2
 # Script's arguments:
 #    arg1: path to the txt file with hash and filename to use as template //
 #           File format: first column has hash number, second column file name
