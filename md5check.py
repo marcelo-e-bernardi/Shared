@@ -1,14 +1,18 @@
-import os
-import hashlib
-import sys
-
 ##
-#    #> python[.exe] md5check.py arg1 arg2
+#  Usage: \>python[.exe] md5check.py arg1 arg2
 # Script's arguments:
 #    arg1: path to the txt file with hash and filename to use as template //
 #           File format: first column has hash number, second column file name
 #    arg2: path to the check files // path to ISOs, Files, etc.... if is a file, then the script take a MD5hash
+#   Author: MB 10/2021
+#   versio: 1.0
+##
+import os
+import hashlib
+import sys
 
+
+#Variables
 md5offiles=sys.argv[1] # md5offiles
 path=sys.argv[2] # path to ISO
 fileconut=0
@@ -19,7 +23,7 @@ notok=0
 #path='C:\\Users\\power\\git\\Python\\zFilePractice\\'
 #path='C:\\Users\\power\\git\\Python\\'
 
-
+#Functions
 def Read_Two_Column_File(file_name):
     thisdict = { }
 
